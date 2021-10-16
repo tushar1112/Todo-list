@@ -5,7 +5,7 @@ const todo = ({text,todos,settodos,val}) => {
     const deleteList=()=>{
       settodos(todos.filter((ele)=>ele.id!==val.id));   
     }
-
+//mapping for the items in jsx
     const completeHandler =()=>{
      settodos(todos.map((item)=>{
          if(item.id===val.id)
